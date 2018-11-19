@@ -266,3 +266,46 @@ a.header {
 	padding: 25px;
 	margin: 20px;
 }
+
+/* Main Section */
+
+.main_section {
+	width: 100%;
+	padding: 60px 40px 0 40px;
+	display: flex;
+	flex-direction: column;
+	background-color: #303030; 
+}
+
+.main_gallery {
+	width: 729px;
+	margin: 0 auto;
+	padding: 65px;
+	text-align: center;
+}
+
+.main_gallery h1 {
+	font-size: 36px;
+}
+
+.main_gallery p {
+	font-size: 1.125rem;
+	max-width: 493px;
+	margin: 0 auto;
+}
+
+.buy_section {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 50px;
+	max-width: 1245px;
+	margin: 0 auto;
+}
+
+.subscribe .volume_one .volume_two {
+	display: block;
+	padding-bottom: 25px;
+    padding-right: 55px;
+	width: 270px;
+}
+
