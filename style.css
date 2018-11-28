@@ -394,3 +394,29 @@ strike {
 	height: 285px;
 	padding: 10px;
 }
+
+/* Footer Section */
+
+.end_footer {
+	background: url(img/footer-pattern-e45b22709aac1c2162267d74be4c49896a1987dcac3ff03371d3a2a4131b1f84.png) no-repeat bottom;
+}
+
+.footer_container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	width: 1189px;
+	height: 200px;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+	border-top: 1px solid var(--darkgray);
+}
+
+.about li, .contact li, .learn li, .follow li, a {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.about ul, .contact ul, .learn ul, .follow ul {
+	padding: 0;
+}
