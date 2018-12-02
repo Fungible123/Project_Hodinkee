@@ -16,12 +16,24 @@
 html {
 	box-sizing: border-box;
 	font-family: 'Times New Roman', 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 body {
 	background-color: var(--dark);
 	color: #fff;
 	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
 }
 
 img {
@@ -74,15 +86,22 @@ img {
 	font-size: 0.75em;
 }
 
-.navigation-container a {
+.navigation-container ul a {
 	color: var(--primary);
 	text-decoration: none;
 	line-height: 33px;
 	padding: 0 5px;
+	font-size:  15px;
 }
-
 a.header {
+	text-decoration: none;
+}
+a.header h1 {
 	padding: 0;
+	margin-top: 25px;
+	font-size: 2rem;
+	letter-spacing: 3px;
+	color: var(--primary);
 }
 
 .btn-nav {
@@ -91,7 +110,8 @@ a.header {
 	align-items: center;
 	justify-content: flex-end;
 	line-height: 1rem;
-	margin: 16px
+	margin: 0;
+	height: 60px;
 }
 
 .btn-nav a {
@@ -101,6 +121,8 @@ a.header {
 	padding: 0 18px;
 	line-height: 32px;
 	border: 1px solid var(--primary);
+	text-decoration: none;
+	color: var(--primary);
 }
 
 /* Header */
@@ -399,6 +421,9 @@ strike {
 
 .end_footer {
 	background: url(img/footer-pattern-e45b22709aac1c2162267d74be4c49896a1987dcac3ff03371d3a2a4131b1f84.png) no-repeat bottom;
+	padding: 0 40px 10px;
+	z-index: 200;
+	display: block;
 }
 
 .footer_container {
@@ -412,11 +437,56 @@ strike {
 	border-top: 1px solid var(--darkgray);
 }
 
-.about li, .contact li, .learn li, .follow li, a {
+.about li a, .contact li a, .learn li a, .follow li a {
 	text-decoration: none;
 	list-style-type: none;
+	color: var(--grey);
+	font-family: sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	line-height: 2;
+	transition: color 0.3s ease-in-out;
+	font-weight: 400;
+	letter-spacing: 1px;
 }
 
 .about ul, .contact ul, .learn ul, .follow ul {
 	padding: 0;
+	list-style-type: none;
+}
+
+.about h1, .contact h1, .learn h1, .follow h1 {
+	font-size: 16px;
+	font-family: sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+
+.about li a:hover, .contact li a:hover, .learn li a:hover, .follow li a:hover {
+	color: var(--primary);
+}
+
+.logo_copyright {
+	text-align: center;
+	padding: 0;
+	margin-bottom: 30px;
+	font-family: sans-serif;
+}
+
+.logo_copyright h1 {
+	font-size: 1.4em;
+	font-weight: 100;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+}
+
+.logo_copyright p {
+	margin-top: 10px;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: var(--grey);
 }
