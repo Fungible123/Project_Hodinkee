@@ -48,6 +48,7 @@ img {
 	background-color: var(--dark);
 	border-bottom: 1px solid #434343;
 	height: 62px;
+	z-index: 10000;
 }
 
 .navigation-container {
@@ -69,29 +70,27 @@ img {
 	width: 177px;
 }
 
-.navigation-container ul {
+.nav-options {
 	display: flex;
 	flex-direction: row;
-	text-align: center;
 	list-style-type: none;
 	justify-content: space-between;
 	align-content: center;
-	max-width: 580px;
+	max-width: 700px;
 	padding: 0;
 }
 
-.navigation-container li {
+.nav-options li {
 	margin-right: 16px;
 	letter-spacing: 1px;
-	font-size: 0.75em;
 }
 
-.navigation-container ul a {
+.nav-options li a {
 	color: var(--primary);
 	text-decoration: none;
 	line-height: 33px;
+	font-size: 11px;
 	padding: 0 5px;
-	font-size:  15px;
 }
 a.header {
 	text-decoration: none;
@@ -99,8 +98,8 @@ a.header {
 a.header h1 {
 	padding: 0;
 	margin-top: 25px;
-	font-size: 2rem;
-	letter-spacing: 3px;
+	font-size: 1.8rem;
+	letter-spacing: 4px;
 	color: var(--primary);
 }
 
@@ -123,6 +122,21 @@ a.header h1 {
 	border: 1px solid var(--primary);
 	text-decoration: none;
 	color: var(--primary);
+}
+
+#sections, #brands {
+	width: 88px;
+	margin-right: 0;
+}
+
+#sections a i, #brands a i {
+	margin-left: 3px;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out
+}
+
+#sections a:hover i, #brands a:hover i {
+	opacity: var(--primary);
 }
 
 /* Header */
@@ -156,7 +170,7 @@ a.header h1 {
 	align-content: center;
 	max-width: 1280px;
 	margin: 0 35px;
-	padding: 0 40px;
+	padding: 50px 40px;
 }
 
 .header_group h1 {
@@ -207,25 +221,39 @@ a.header h1 {
 /* Main Article */
 
 .main-article {
+	display: grid;
+	grid-template-areas: 
+	'big-pic big-pic vol2'
+	'big-pic big-pic remaking';
 	max-width: 1280px;
 	margin: 30px 35px;
 	padding: 0 40px;
 }
 
 .big-pic {
+	display: block;
 	grid-area: big-pic;
 	width: 780px;
 	height: 1070px;
-	background-image: url(img/header.jpg);
-	background-size: 100%;
 	background-position: center;
-	padding: 1.5rem;
-	display: flex;
-	flex-direction: column;
-	align-items: start;
+	padding: 0;
+	opacity: 1;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.big-pic a {
+	text-decoration: none;
+	color: var(--primary);
+}
+
+.big-pic:hover {
+	opacity: 0.8;
 }
 
 .card {
+	position: absolute;
+	top: 850px;
+	left: 100px;
 	display: block;
 	background-color: rgba(30,30,30,0.9);
 	max-width: 390px;
@@ -255,18 +283,30 @@ a.header h1 {
 }
 
 .vol2 {
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	grid-area: vol2;
 	width: 390px;
 	background-color: var(--darkgray);
 	height: 530px;
-	align-content: center;
-	justify-items: center;
+	justify-content: center;
+	align-items: center;
+	opacity: 1;
+	transition: opacity 0.3s ease-in-out;
 }
 
-.vol2 img {
+.vol2:hover {
+	opacity: .8;
+}
+
+.vol2 a {
+	text-decoration: none;
+	color: var(--primary);
+}
+
+.vol2 a img {
+	max-width: 300px;
 	height: 400px;
-	max-width: 100%;
 }
 
 .remaking {
@@ -279,6 +319,12 @@ a.header h1 {
 	justify-content: flex-end;
 	width: 390px;
 	height: 520px;
+	opacity: 1;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.remaking:hover {
+	opacity: .8;
 }
 
 .card2 {
