@@ -124,19 +124,56 @@ a.header h1 {
 	color: var(--primary);
 }
 
-#sections, #brands {
+#sections, #brands, #shop {
 	width: 88px;
 	margin-right: 0;
 }
 
-#sections a i, #brands a i {
+#sections a i, #brands a i, #shop a i {
 	margin-left: 3px;
 	opacity: 0;
 	transition: opacity 0.3s ease-in-out
 }
 
-#sections a:hover i, #brands a:hover i {
+#sections a:hover i, #brands a:hover i, #shop a:hover i {
 	opacity: var(--primary);
+}
+
+#shop {
+	width: 70px;
+}
+
+/* Dropdown Menus */
+
+.content-wrapper {
+	display: none;
+	position: absolute;
+	background-color: #222;
+	max-width: 1280px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin: 0 auto;
+	z-index: 1;
+	top: 100%;
+}
+
+.columns-list-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.columns-list-inner ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	list-style-type: none;
+	padding: 0;
+	margin-top: 16px;
+	text-transform: uppercase;
+	font-size: 12px; 
+}
+
+.active {
+	display: block;
 }
 
 /* Header */
