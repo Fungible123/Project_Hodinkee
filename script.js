@@ -1,13 +1,14 @@
 function myFunction() {
-    var dropDown = document.querySelector("#myDropdown").classList.toggle("active");
+   let dropDown = document.querySelector('ul.nav-options li#sections');
+   
+   dropDown.addEventListener("click", function (e) {
 
-// Close the dropdown if the user clicks outside of it
-    document.addEventListener("click", function(e) {
-        if (!e.target.matches("#sections")) {
-        var myDropdown = dropDown;
-        }
-        if (myDropdown.classList.contains("active")) {
-        myDropdown.classList.remove("active");
-        }
-    })
+    if (e.target.tagName === 'A') {
+        document.querySelector("#myDropdown").classList.toggle("active");
+    }
+
+   }, false);
+
 }
+
+myFunction();
