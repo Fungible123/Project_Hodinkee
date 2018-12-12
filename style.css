@@ -145,16 +145,20 @@ a.header h1 {
 
 /* Dropdown Menus */
 
-.content-wrapper {
-	display: none;
+#myDropdown {
 	position: absolute;
 	background: var(--dark);
-	max-width: 1280px;
+	width: 100%;
 	padding-left: 40px;
 	padding-right: 40px;
-	margin: 0 auto;
+	margin: 0 35px 0 35px;
 	z-index: 10000;
 	top: 100%;
+	left: 0;
+	overflow: hidden;
+	transition: opacity 0.2s ease-in-out 0s;
+	opacity: 0;
+	padding: 30px 40px 50px 40px;
 }
 
 .columns-list-container {
@@ -172,9 +176,6 @@ a.header h1 {
 	font-size: 12px; 
 }
 
-.active {
-	display: block;
-}
 
 /* Header */
 
