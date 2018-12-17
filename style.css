@@ -280,6 +280,24 @@ a.header h1 {
 	margin: 0;
 }
 
+.search-quicklinks {
+	display: none;
+}
+
+.search-input-container {
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 14px 10px;
+    background: var(--dark);
+    visibility: hidden;
+    opacity: 0;
+	transition: all 0.2s;
+}
+
 /* Header */
 
 .main-header {
