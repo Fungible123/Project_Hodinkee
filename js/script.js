@@ -130,3 +130,15 @@ $(document).ready(function(){
     });
 });
       
+// Hamburger button 
+
+const hamburgerButton = () => {
+    const burger = document.querySelector('.hamburger-box');
+
+    burger.addEventListener('click', () => {
+        const patty = document.querySelector('.hamburger');
+        patty.classList.toggle('is-active');
+    });
+}
+
+hamburgerButton();
