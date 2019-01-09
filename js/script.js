@@ -133,11 +133,10 @@ $(document).ready(function(){
 // Hamburger button 
 
 const hamburgerButton = () => {
-    const burger = document.querySelector('.hamburger-box');
+    const burger = document.querySelector('.hamburger');
 
     burger.addEventListener('click', () => {
-        const patty = document.querySelector('.hamburger');
-        patty.classList.toggle('is-active');
+        burger.classList.toggle('is-active');
     });
 }
 

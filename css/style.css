@@ -408,6 +408,7 @@ a.header {
 	align-items: center;
 	justify-content: space-around;
 	margin-top: 30px;
+	width: 100%;
 }
 
 .advertisement img {
@@ -823,6 +824,25 @@ strike {
 	#sections a i, #brands a i, #shop a i{
 		margin: 0;
 	}
+	.btn-body {
+		margin-right: 10px;
+	}
+	.vol2 {
+		padding: 20px;
+	}
+	.vol2 img {
+		width: 100%;
+	}
+	.remaking {
+		display: block;
+		max-height: 360px;
+		padding: 10px;
+	}
+	.card2 {
+		display: block;
+		max-height: 300px;
+		padding: 10px;
+	}
 }
 
 @media screen and (max-width: 963px) {
@@ -846,6 +866,38 @@ strike {
 		padding: 0 10px;
 		line-height: 32px;
 		letter-spacing: .10em;
+	}
+
+	.advertisement img {
+		display: none;
+	}
+
+	.btn-body {
+		margin: 20px;
+	}
+	.header_group {
+		margin: 0;
+	}
+	.main-article {
+		margin: 30px 0;
+	}
+	.remaking {
+		max-height: 280px;
+	}
+	.remaking h1 {
+		font-size: 1em;
+	}
+	.card2 {
+		max-height: 230px;
+	}
+	.card2 h4 {
+		font-size: .8em;
+	}
+	.card2 h1 {
+		font-size: .8em;
+	}
+	.card2 p {
+		font-size: .8em;
 	}
 }
 
@@ -985,6 +1037,9 @@ strike {
 
 	.date {
 		float: left;
+		font-family: 'BrownPro Web Regular', sans-serif;
+		font-size: .7em;
+		text-transform: uppercase;
 	}
 
 	.mobile-info-member {
@@ -999,5 +1054,35 @@ strike {
 		font-size: .7em;
 		margin-left: 18px;
 	}
+
+	/* Header styling */
+	.advertisement {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		margin-bottom: 10px;
+		max-height: 200px;
+		padding: 20px;
+	}
+	.advertisement p {
+		width: 100%;
+		margin: 10px 0;
+	}
+	.btn-body {
+		width: 100%;
+		margin: 10px 0;
+	}
+	
 }
 
+@media screen and (max-width: 860px) {
+	.header_group h1 {
+		font-size: 30px;
+	}
+	.header_group {
+		max-height: 300px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+}
