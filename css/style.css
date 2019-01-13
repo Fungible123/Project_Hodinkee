@@ -1086,3 +1086,42 @@ strike {
 @media screen and (max-width: 768px) {
 
 }
+
+@media screen and (max-width: 668px) {
+	.main-article {
+		display: block;
+	}
+	.big-pic {
+		width: 100%;
+	}
+	.card {
+		position: relative;
+		top: 0;
+		left: 0;
+		display: block;
+		max-width: 1000px;
+		background-color: rgba(0,0,0,0);
+		padding: 20px 0 0 0;
+	}
+	.vol2 {
+		width: 100%;
+		padding: 40px 0 0 0;
+		margin: 40px 0 0 0;
+	}
+	.remaking {
+		position: relative;
+		width: 100%;
+		min-height: 600px;
+		padding: 0;
+		margin-top: 40px;
+	}
+
+	.card2 {
+		position: absolute;
+		top: 60%;
+		background-color: rgba(30,30,30,0.9);
+		max-width: 70%;
+		padding: 10px;
+		margin: 20px 0 0 20px;
+	}
+}
