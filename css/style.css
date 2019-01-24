@@ -79,6 +79,8 @@ img { max-width: 100%; }
 	font-size: 11px;
 	padding: 0 5px;
 }
+.nav-options li#highlight { border-bottom: 2px var(--primary) solid; }
+
 a.header {
 	text-decoration: none;
 	height: 33px;
@@ -126,8 +128,6 @@ a.header {
 	opacity: var(--primary);
 }
 #shop { width: 70px; }
-
-.nav-options li#highlight { border-bottom: 2px var(--primary) solid; }
 
 /* Dropdown Menus */
 #myDropdown,

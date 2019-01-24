@@ -134,10 +134,14 @@ $(document).ready(function(){
 
 const hamburgerButton = () => {
     const burger = document.querySelector('.hamburger');
+    const navigationPanel = document.querySelector('.nav-options');
 
     burger.addEventListener('click', () => {
         burger.classList.toggle('is-active');
+        navigationPanel.classList.toggle('is-active');
+
     });
 }
 
 hamburgerButton();
+
