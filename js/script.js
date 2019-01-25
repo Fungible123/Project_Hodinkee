@@ -33,7 +33,6 @@ function myFunction() {
                 panel1.style.opacity = 0;
             }
         }
-
         e.preventDefault();
     });
     
@@ -139,7 +138,6 @@ const hamburgerButton = () => {
     burger.addEventListener('click', () => {
         burger.classList.toggle('is-active');
         navigationPanel.classList.toggle('is-active');
-
     });
 }
 
